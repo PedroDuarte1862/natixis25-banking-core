@@ -4,9 +4,24 @@ on:
   workflow_dispatch:
 
 jobs:
-  hello_natixis:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say Hello
-        run: echo "Hello Natixis!"
+      - name: Obter código
+        run: echo "Obter código"
+      - name: Instalar DEPs
+        run: echo "Instalar DEPs"
+      - name: Rodar TEST
+        run: echo "Rodar TEST"
+    
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obter código
+        run: echo "Obter código"
+      - name: Instalar DEPs
+        run: echo "Instalar DEPs"
+      - name: Rodar TEST
+        run: echo "Rodar TEST"
